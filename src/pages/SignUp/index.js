@@ -2,6 +2,6 @@ import React from 'react';
 
 // import { Container } from './styles';
 
-export default function SingOut() {
-  return <div />;
+export default function SignUp() {
+  return <h2>SignUp</h2>;
 }
