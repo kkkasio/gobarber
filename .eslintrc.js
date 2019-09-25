@@ -32,12 +32,13 @@ module.exports = {
     'no-console': ['error', { allow: ['tron'] }],
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'warn',
+    'import/no-unresolved': 0,
   },
-  settings: {
+  /*settings: {
     'import/resolver': {
       'babel-plugin-root-import': {
         rootPathSuffix: 'src',
       },
     },
-  },
+  },*/
 };

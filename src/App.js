@@ -1,8 +1,14 @@
 import React from 'react';
-import './App.css';
+import { Router } from 'react-router-dom';
+import Routes from './routes';
+import history from './services/history';
 
 function App() {
-  return <h1>Olá Mundo && Helo World</h1>;
+  return (
+    <Router history={history}>
+      <Routes />
+    </Router>
+  );
 }
 
 export default App;
