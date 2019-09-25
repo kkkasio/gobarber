@@ -34,11 +34,11 @@ module.exports = {
     'react-hooks/exhaustive-deps': 'warn',
     'import/no-unresolved': 0,
   },
-  /*settings: {
+  settings: {
     'import/resolver': {
       'babel-plugin-root-import': {
         rootPathSuffix: 'src',
       },
     },
-  },*/
+  },
 };
