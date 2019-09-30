@@ -1,5 +1,14 @@
-import styled from 'styled-components';
+import styled, { css, keyframes } from 'styled-components';
 import { darken } from 'polished';
+
+const rotate = keyframes`
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+`;
 
 export const Wrapper = styled.div`
   height: 100%;
@@ -52,6 +61,14 @@ export const Content = styled.div`
       &:hover {
         background: ${darken(0.15, '#3b9eff')};
       }
+
+      ${props =>
+        props.loading &&
+        css`
+          svg {
+            animation: ${rotate} 2s linear infinite;
+          }
+        `}
     }
 
     a {

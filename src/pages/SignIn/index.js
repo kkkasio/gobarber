@@ -2,6 +2,8 @@ import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 
+import { FaSpinner } from 'react-icons/fa';
+
 import * as Yup from 'yup';
 import { Form, Input } from '@rocketseat/unform';
 
@@ -34,7 +36,9 @@ export default function SignIn() {
           type="password"
           placeholder="Sua senha secreta"
         />
-        <button type="submit">{loading ? 'Carregando...' : 'Acessar'}</button>
+        <button type="submit">
+          {loading ? <FaSpinner color="#fff" size={25} /> : 'Acessar'}
+        </button>
         <Link to="/register">Criar conta grátis!</Link>
       </Form>
     </>
