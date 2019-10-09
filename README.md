@@ -12,6 +12,8 @@ Lib's
 - [Styled Components]()
 - [Polished]()
 - [React Toastfy]()
+- [React Icons]()
+- [React perfect scrollbar]()
 
 # PersistGate
 
