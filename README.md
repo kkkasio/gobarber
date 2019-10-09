@@ -14,6 +14,7 @@ Lib's
 - [React Toastfy]()
 - [React Icons]()
 - [React perfect scrollbar]()
+- [Date FNS]()
 
 # PersistGate
 
