@@ -21,6 +21,11 @@ export default function auth(state = INITIAL_STATE, action) {
         break;
       }
 
+      case '@auth/SIGN_UP_REQUEST': {
+        draft.loading = true;
+        break;
+      }
+
       case '@auth/SIGN_FAILURE': {
         draft.loading = false;
         break;
