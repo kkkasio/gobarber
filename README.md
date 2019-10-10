@@ -19,3 +19,7 @@ Lib's
 # PersistGate
 
 > Recebe o persistor do store, e renderiza o conteudo das rotas somente depois de buscar as informações do storage da aplicação.
+
+# useRef (React)
+
+> ...
