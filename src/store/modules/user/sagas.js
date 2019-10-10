@@ -20,9 +20,8 @@ export function* updateProfile({ payload }) {
     );
 
     const response = yield call(api.put, 'users', profile);
-    console.tron.log(response.data);
 
-    toast.success('Perfil atualizado com sucesso');
+    toast.success('Perfil atualizado com sucesso!');
 
     yield put(updateProfileSuccess(response.data));
   } catch (error) {

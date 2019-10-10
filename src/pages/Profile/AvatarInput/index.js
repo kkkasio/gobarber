@@ -29,7 +29,9 @@ export default function AvatarInput() {
 
     const response = await api.post('files', data);
 
-    const { id, url } = response.data;
+    const { id, url } = response.data.file;
+
+    console.tron.log(response.data);
 
     setFile(id);
     setPreview(url);
