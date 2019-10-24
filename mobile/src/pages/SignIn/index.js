@@ -1,13 +1,17 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { View } from 'react-native';
 import Bacgrkound from '~/Components/Background';
+import Input from '~/Components/Input';
+import Button from '~/Components/Button';
+
 // import { Container } from './styles';
 
 export default function SignIn() {
   return (
     <Bacgrkound>
       <View>
-        <Text>Hello world</Text>
+        <Input icon="face" placeholder="Digite seu nome" />
+        <Button>Entrar</Button>
       </View>
     </Bacgrkound>
   );
