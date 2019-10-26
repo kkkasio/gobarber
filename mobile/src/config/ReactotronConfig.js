@@ -1,5 +1,5 @@
 /* eslint-disable no-undef */
-import Reactotron from 'reactotron-react-native';
+import Reactotron, { asyncStorage } from 'reactotron-react-native';
 import { reactotronRedux } from 'reactotron-redux';
 import reactotronSaga from 'reactotron-redux-saga';
 
@@ -9,6 +9,7 @@ if (__DEV__) {
   const tron = Reactotron.configure({ name: 'MyApp' })
     .useReactNative()
     .setAsyncStorageHandler(AsyncStorage)
+    .use(asyncStorage())
     .use(reactotronRedux())
     .use(reactotronSaga())
     .connect();
