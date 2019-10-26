@@ -13,7 +13,7 @@ import {
   SignLinkText,
 } from './styles';
 
-export default function SignIn() {
+export default function SignIn({ navigation }) {
   return (
     <Bacgrkound>
       <Container>
@@ -35,7 +35,7 @@ export default function SignIn() {
 
           <SubmitButton onPress={() => {}}>Accessar</SubmitButton>
         </Form>
-        <SignLink onPres={() => {}}>
+        <SignLink onPress={() => navigation.navigate('SignUp')}>
           <SignLinkText>Criar conta gratuita</SignLinkText>
         </SignLink>
       </Container>
