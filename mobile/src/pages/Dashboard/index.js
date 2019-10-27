@@ -8,8 +8,6 @@ import { Container, Text, List } from './styles';
 
 import api from '~/services/api';
 
-const data = [1, 2, 3, 4, 5];
-
 export default function Dashboard() {
   const [appointments, setAppointments] = useState([]);
 
