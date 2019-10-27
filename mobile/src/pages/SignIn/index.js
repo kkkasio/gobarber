@@ -51,6 +51,7 @@ export default function SignIn({ navigation }) {
             value={password}
             ref={passwordRef}
             onChangeText={setPassword}
+            onSubmitEditing={handleSubmit}
           />
 
           <SubmitButton loading={loading} onPress={handleSubmit}>
